@@ -3,154 +3,123 @@
   <head>
     <title>Graphs | Algorithms showcase</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <!-- showcase begin -->
-    <div class="showcase">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="showcase-text navbar-brand" href="index.html">Algorithms</a>
-          <button class="showcase-text navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
-          <div class="collapse navbar-collapse" id="nav">
-            <div class="navbar-nav ml-auto">
-              <a class="showcase-text nav-item nav-link" href="index.html">Home</a>
-              <a class="showcase-text nav-item nav-link" href="sorting.html">Sorting</a>
-              <a class="showcase-text nav-item nav-link" href="searching.html">Searching</a>
-              <a class="showcase-text nav-item nav-link active" href="graphs.html">Graphs</a>
-              <a class="showcase-text nav-item nav-link" href="copyright.html">Copyright</a>
-            </div>
-          </div>
-        </div>
+    <header>
+      <div id="particles-js"></div>
+      <nav>
+        <a href="index.html">Algorithms</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sorting.html">Sorting</a></li>
+          <li><a href="searching.html">Searching</a></li>
+          <li><a class="active" href="graphs.html">Graphs</a></li>
+          <li><a href="copyright.html">Copyright</a></li>
+        </ul>
       </nav>
-
-      <div class="algs-placeholder">
-        <div id="particles-js"></div>
-        <div class="container">
-          <div class="row align-items-center justify-content-center welcome-msg">
-            <h1 class="showcase-text text-center"><strong>Graphs</strong></h1>
-          </div>
-        </div>
+      <div class="heading">
+        <p class="history">
+          <a href="index.html"><span class="hist-item mr-2">Home</span></a>
+          <span class="hist-item">Graphs</span>
+        </p>
+        <h1><strong>Graphs</strong></h1>
       </div>
-    </div>
-    <!-- showcase end -->
-    <div class="row section section-odd justify-content-center">
-      <div class="block-3 d-md-flex">
-        <figure class="figure">
-          <img class="figure-img image img-fluid" src="img/1*VM84VPcCQe0gSy44l9S5yA.jpeg">
-        </figure>
-        <div class="text" style="padding-left: 0;">
+    </header>
+
+    <main>
+      <section>
+        <img src="img/1*VM84VPcCQe0gSy44l9S5yA.jpeg" alt="BFS and DFS">
+        <div class="text">
           <h2 class="heading">BFS and DFS</h2>
-          <p>Very simple and efficient algorithms for traversing a graph that serve a basis for many other ones</p>
+          <p>Very simple and efficient algorithms for traversing a graph<br>
+          that serve a basis for many other ones</p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="row section section-even justify-content-center">
-      <div class="block-3 d-md-flex">
-        <figure class="figure order-2">
-          <img class="figure-img image-2 img-fluid" src="img/mst2.jpeg">
-        </figure>
-        <div class="text order-1">
+      <section>
+        <img src="img/mst2.jpeg" alt="Prim's and Kruskal's algorithms">
+        <div class="text">
           <h2 class="heading">Prim's and Kruskal's algorithms</h2>
           <p>Clever and fast algorithms for computing minimum<br>spanning tree of some graph</p>
           <P>That problem often arises in practical applications</p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="row section section-odd justify-content-center">
-      <div class="block-3 d-md-flex">
-        <figure class="figure">
-          <img class="figure-img image img-fluid" src="img/SAG-Graphs-feature.png">
-        </figure>
-        <div class="text" style="padding-left: 0;">
-          <h2 class="heading">Dijkstra's algorithm</h2>
+      <section>
+        <img src="img/SAG-Graphs-feature.png" alt="Dijkstra's algorithm">
+        <div class="text">
+          <h2 class="heading">Hash table</h2>
           <p>A simple and easily implemented algorithm for solving <i>Shortest Path</i> problem</p>
           <p>Its efficiency made it a right choice for most practical needs</p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="row section section-even justify-content-center">
-      <div class="block-3 d-md-flex">
-        <figure class="figure order-2">
-          <img class="figure-img image img-fluid" src="img/Growth-Algorithm.jpg">
-        </figure>
-        <div class="text order-1">
+      <section>
+        <img src="img/Growth-Algorithm.jpg" alt="Ford-Falkerson algorithm">
+        <div class="text">
           <h2 class="heading">Ford-Falkerson algorithm</h2>
           <p>Uses smart graph representation to address <i>Network Flow</i> problem - <br>
           another quite simple idea that's very useful in many situations</p>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <div class="row section section-odd justify-content-center">
-      <div class="block-3 d-md-flex">
-        <div class="text" style="width: 50vw;">
-          <h2 class="heading">Efficiency comparison</h2>
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Algorithm</th>
-                <th scope="col">Time (worst case)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>BFS and DFS</td>
-                <td>&theta;(<i>V</i> + <i>E</i>)<sup>*</sup></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Prim's and Kruskal's algorithms</td>
-                <td>&theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>V</i>)) and &theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>E</i>))</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Dijkstra's algorithm</td>
-                <td>&theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>V</i>))</td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>Ford-Falkerson algorithm</td>
-                <td>&theta;(<i>E</i><sup>2</sup> &times; <i>V</i>)<sup>**</sup></td>
-              </tr>
-            </tbody>
-          </table>
+      <section class="summary">
+        <h2>Efficiency comparison</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Algorithm</th>
+              <th scope="col">Time (worst case)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>BFS and DFS</td>
+              <td>&theta;(<i>V</i> + <i>E</i>)<sup>*</sup></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Prim's and Kruskal's algorithms</td>
+              <td>&theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>V</i>)) and &theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>E</i>))</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Dijkstra's algorithm</td>
+              <td>&theta;(<i>E</i> &times; <i>log<sub>2</sub></i> (<i>V</i>))</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Ford-Falkerson algorithm</td>
+              <td>&theta;(<i>E</i><sup>2</sup> &times; <i>V</i>)<sup>**</sup></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="note">
           <p><sup>*</sup> <i>V - number of vertices, E - number of edges</i></p>
           <p><sup>**</sup> <i>works substantially faster on typical inputs</i></p>
         </div>
-      </div>
-    </div>
-    <!-- footer begin -->
-    <div class="container-fluid showcase footer">
-      <div class="row block-3">
-        <div class="col-md">
-          <div class="mt-3 ml-5 text">
-            <h2 class="showcase-text">Quick Links</h2>
-            <ul class="list-unstyled">
-              <li><a href="index.html" class="py-2 d-block showcase-text">Home</a></li>
-              <li><a href="sorting.html" class="py-2 d-block showcase-text">Sorting</a></li>
-              <li><a href="searching.html" class="py-2 d-block showcase-text">Searching</a></li>
-              <li><a href="graphs.html" class="py-2 d-block showcase-text active">Graphs</a></li>
-              <li><a href="copyright.html" class="py-2 d-block showcase-text">Copyright</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- footer end -->
-    <!-- scripts begin -->
+      </section>
+    </main>
+
+    <footer>
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sorting.html">Sorting</a></li>
+        <li><a href="searching.html">Searching</a></li>
+        <li><a href="graphs.html" class="active">Graphs</a></li>
+        <li><a href="copyright.html">Copyright</a></li>
+      </ul>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="js/particle.js"></script>
-    <!-- scripts end -->
   </body>
 </html>
