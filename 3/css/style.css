@@ -95,6 +95,16 @@ main section {
   justify-content: center;
 }
 
+@media (max-width: 1281px) {
+  main section {
+    flex-direction: column !important;
+  }
+
+  main section div.text {
+    padding-top: 3%;
+  }
+}
+
 main section div.text {
   margin: 0 3%;
 }
